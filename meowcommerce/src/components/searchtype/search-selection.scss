@@ -1,0 +1,12 @@
+.search-selections-containers{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+
+    .search-selections{
+        display: flex;
+        flex-direction: row;
+        padding: 0.2%;
+
+    }
+}
