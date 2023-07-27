@@ -1,5 +1,9 @@
 # OnlineBuildingInventory
 
+#### VIST OUR SITE ! (Still under Construction tho)
+[I'm an inline-style link](ethcircularmaterial.site)
+
+
 "There are existing used materials platform in switzerland, however, the features are not useful for generating a design using these used materials from demolished buildings, material features also differe across platform and it lacks 3D model which is crucial for architectural design"
 
 "To account for the current gap, a Web-based platform that allows users to search, browse, used building materials from lists of soon-to-be-demolished building under different creteria such as shape, dimensions, materiality, location´. etc, is developed. 
