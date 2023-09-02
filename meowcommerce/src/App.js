@@ -5,8 +5,7 @@ import Navigation from './routes/navigation/navigationComponenet.js';
 import Shop from './routes/shop/shopComponent.js';
 import CheckOut from './routes/checkout/checkoutComponenet.js';
 import Segmentation from './components/segmentation-transformer/segmentationComponent.js';
-
-import './components/home-card/background.css';
+import UploadPage from './routes/upload/uploadPage.js';
 
 
 
@@ -20,7 +19,8 @@ function App() {
         <Route path = 'shop/*' element = {<Shop/>}/>
         <Route path = 'checkout' element = {<CheckOut/>}/>
         <Route path = 'segmentation' element = {<Segmentation/>}/>
-      </Route>
+        <Route path ='upload_material' element= {<UploadPage/>}/>
+    </Route>
     </Routes>
   );
 };

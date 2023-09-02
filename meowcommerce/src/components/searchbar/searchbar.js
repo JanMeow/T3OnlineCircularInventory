@@ -13,6 +13,7 @@ const SearchBar = () =>{
     };
 
     const onFieldSubmit = (event) =>{
+        event.preventDefault()
         // console.log(event)
         // setSearchType()
     };

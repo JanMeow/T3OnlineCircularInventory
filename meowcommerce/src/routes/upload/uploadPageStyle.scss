@@ -1,0 +1,51 @@
+.upload-page-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0% 5% 2%;
+
+
+    .upload-material-selection{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    };
+    .form-container{
+        display: flex;
+        flex-direction: column;
+
+
+        .form{
+        
+            .form-line{
+                display: flex;
+                flex-direction: row;
+                margin: 1% 0% 0% 0%;
+                width:30vw;
+                max-width: 60vw;
+                justify-content: space-between;
+                
+
+
+                .form-line-left{
+                    margin: 0 3% 0 0%;
+                    align-self: flex-start
+
+                };
+
+                .form-line-right{
+                    align-self: flex-end;
+                    padding: 0% 6%;
+
+                    
+                };
+
+            };
+        };
+
+        .upload-page-submit{
+            margin-top: 2.5%;
+            max-width:14vw;
+    
+        };
+    };
+};

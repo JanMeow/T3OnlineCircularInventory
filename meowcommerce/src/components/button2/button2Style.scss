@@ -1,0 +1,70 @@
+.custom-btn{
+    width: 130px;
+    height: 40px;
+    margin-right: 5%;
+    color: #333333;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    padding:0px 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: smaller;
+}
+
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(248, 248, 248) 90%, rgb(136, 136, 136) 40%);
+  }
+  .btn-5:hover {
+    color: #000000;
+    background: yellow;
+    text-decoration: dashed;
+    font-size: medium;
+    box-shadow:none;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #757575;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+.search-selections{
+    display: flex;
+    align-items: flex-start;
+    width: max-content;
+    flex-direction: column;
+    padding: 0.2%;
+    font-size: small;
+
+}
