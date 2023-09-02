@@ -1,30 +1,31 @@
-import { useContext, Fragment } from "react";
+import { useState, useContext, Fragment } from "react";
+import { Link } from "react-router-dom";
+import MaterialCard from "../../components/home-card2/material-cardComponent";
+import SearchTypeStream from "../../components/searchtype/search-type-Stream";
 
-import { ProductsContext} from "../../context/productsContext";
-import MaterialCard from "../../components/material-card/material-cardComponent";
-import { SearchContext } from "../../context/searchContext";
 
 import './categories-previewStyle.scss'
 
-const CategoriesPreview = () =>{
-    const {materialInfo} = useContext(ProductsContext);
-    const {searchField} = useContext(SearchContext);
+const CategoriesPreview = ({materialInfo, searchField, searchType}) =>{
 
-
+   
     return(
         <Fragment>
             {
-                Object.keys(materialInfo).map(title=>(
-                    <Fragment key = {title}>
-                        <h2>{title}</h2>
-                        <div className="products-container">
-                            {materialInfo[title].map((material)=>{
-                                return material.name.toLowerCase().includes(searchField) &&
-                                <MaterialCard key = {material.id} material ={material}/>
-                            })}
-                        </div>
-                    </Fragment>
-            ))}   
+                materialInfo.map(element=>
+                    {
+                        const{title, items} = element
+                        return(
+                            <Fragment key = {title}>
+                                <Link to = {`${title}`} className="navgation-title">
+                                    <h2>{title.toUpperCase()} </h2>
+                                </Link>
+                                <div className="products-container">
+                                    <SearchTypeStream items={items} searchField= {searchField} title = {title} maxIndex= {4}/>
+                                </div>
+                            </Fragment>
+                        )
+                })}   
         </Fragment>
 
     );

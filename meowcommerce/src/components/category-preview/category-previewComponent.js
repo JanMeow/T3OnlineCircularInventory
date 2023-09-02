@@ -1,26 +1,35 @@
 import './category-previewStyle.scss';
-import MaterialCard from '../material-card/material-cardComponent';
+import MaterialCard from '../home-card2/material-cardComponent';
+import SearchTypeStream from '../searchtype/search-type-Stream';
+import {Fragment, useContext} from 'react';
 
-import { SearchContext } from "../../context/searchContext";
 
 
-const CategoryPreview = ({title, products}) =>{
-    
+
+const CategoryPreview = ({materialInfo, searchField, searchType}) =>{
+
+    const match = document.URL
+
     return(
-        <div className='category-preview-container'>
-            <h2>
-                <span className = 'title'>{title.ToUpperCase()}</span>
-            </h2>
-            <div className='preview'>
-                {
-                    products
-                    .filter((_,idx)=> idx<4)
-                    .map((product) =>
-                    <MaterialCard key = {product.id} product = {product}/>)
-                }
-            </div>
-        </div>
-    )
+        <Fragment>
+            {
+                materialInfo.map(element=>
+                    {
+                        const{title, items} = element
+                        return(
+
+                            match.includes(title)&&
+                            <Fragment key = {title}>
+                                <h2 onClick = {()=>{console.log(match)}}>{title.toUpperCase()} </h2>
+                                <div className="products-container">
+                                    <SearchTypeStream items={items} searchField= {searchField} title = {title} maxIndex= {items.length}/>
+                                </div>
+                            </Fragment>
+                        )
+                })}   
+        </Fragment>
+
+    );
 };
 
 export default CategoryPreview;

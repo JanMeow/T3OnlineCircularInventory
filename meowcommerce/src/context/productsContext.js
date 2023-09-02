@@ -1,5 +1,7 @@
-import { createContext, useState, useEffect} from "react";
+import { createContext, useState, useEffect, useContext} from "react";
 import MaterialData from "../material-data";
+import { SearchContext } from "./searchContext";
+
 
 import {addCollectionAndDocuments, getCategoriesAndDocuments } from "../utils/firebase/firebaseUtils";
 
@@ -16,20 +18,21 @@ export const ProductsContext = createContext({
 // Here we use useState to set a value to the materialInfo attribute that is stored in the parent componenet ProductContext
 // such that is subsequent child can access it. Again even if you dont put anything in the ProductsContext, it will havea new attributre 
 export const ProductsProvider = ({children})=>{
-    const [materialInfo, setMaterialInfo] = useState({});
+    const [materialInfo, setMaterialInfo] = useState(MaterialData);
 
-    useEffect(()=>{
-        // addCollectionAndDocuments('categories', MaterialData)
-        const getCategoriesMap = async()=>{
-            const categoryMap = await getCategoriesAndDocuments();
-            setMaterialInfo(categoryMap)
-        }
 
-        getCategoriesMap();
+    // useEffect(()=>{
+    //     // addCollectionAndDocuments('categories', MaterialData)
+    //     const getCategoriesMap = async()=>{
+    //         const categoryMap = await getCategoriesAndDocuments();
+    //         setMaterialInfo(categoryMap)
+    //     }
 
-    }, [])
+    //     getCategoriesMap();
 
-    const value = {materialInfo}
+    // }, [])
+
+    const value = {materialInfo, setMaterialInfo}
     return (
         <ProductsContext.Provider value ={value}>
             {children}

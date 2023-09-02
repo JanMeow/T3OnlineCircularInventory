@@ -1,0 +1,198 @@
+.top-container{
+    height: 17px;
+    font-family: 'Open Sans', sans-serif;
+    // background-color: rgb(171, 171, 171);
+    padding-top: 1%;
+}
+
+
+
+.content-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+    .home-card-introduction-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+    
+
+    .home-card-introduction-title{
+        font-size: larger;
+        font-weight: 600;
+    }
+
+    .home-card-introduction-text{
+        max-width: 80vw;
+        font-size: medium;
+        margin-bottom: 2%;
+        display: flex;
+        
+
+        img{
+            max-width: 5vw;
+            max-height: 200px;
+        }
+    }
+
+    hr{
+        border: 1px solid rgb(142, 142, 142);
+        width: 85vw;
+    }
+
+
+}
+
+
+.segmentaion-section-container{
+    margin: 2% 8%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    max-width: inherit;
+    flex-shrink: 0;
+    
+
+    .segmentaion-section-left{
+        margin-top: 5%;
+        padding-right: 15px;
+        img{
+            max-width: 60vw;
+            min-width: 300px
+        }
+
+    };
+
+    .segmentaion-section-right{
+        text-align: start;
+        max-width: 9vw;
+        min-width: 250px;
+        padding: 1.5%;
+        // background-color: rgb(237, 206, 48,0.85);
+        border-radius: 3%;
+
+
+        img{
+            max-width: inherit
+        }
+
+
+    };
+
+};
+
+
+.rhino-section-container{
+
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: inherit;
+    margin-top: 5%;
+
+    .rhino-section-left{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 25px;
+        padding: 3%;
+        // background-color: rgb(237, 206, 48,0.85);
+        // border-radius: 1.5%;
+    
+
+        max-width:30vw;
+        min-width: 300px;
+
+        img{
+            max-width: 20vw;
+            min-width: 300px;
+        };
+
+        // p{
+        //     background-color: rgb(237, 206, 48,0.85);
+        //     border-radius: 3%;
+            
+        // };
+
+    };
+
+    .rhino-section-right{
+        max-width: 40vw;
+        min-width:300px;
+        display: flex;
+        justify-content: center;
+
+        img{
+            max-width: inherit;
+            min-width:300px;
+        }
+
+    
+
+    };
+
+};
+
+
+
+.logo-section-container{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width:85vw;
+    flex-shrink: 2;
+
+
+    hr{
+        border: 1px solid rgb(142, 142, 142);
+        width: 85vw;
+    }
+
+    .logo-introduction-title{
+        margin-top: 1%;
+    }
+
+    .logo-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-shrink: 2;
+        overflow: auto;
+
+
+        img{
+            width: 12vw;
+            height:auto;
+            min-width: 65px;
+    
+        }
+    }
+    
+}}
+.bottom-container{
+    margin-top: 60px;
+    background-color: rgb(255, 218, 96);
+    height: 150px;
+    // background-color: #e5e5f7;
+    // opacity: 0.8;
+    // background-image:  linear-gradient(30deg, #f5e829 12%, transparent 12.5%, transparent 87%, #f7ca44 87.5%, #eab105), linear-gradient(150deg, #f7ca44 12%, transparent 12.5%, transparent 87%, #f7ca44 87.5%, #f7ca44), linear-gradient(30deg, #f7ca44 12%, transparent 12.5%, transparent 87%, #f7ca44 87.5%, #f7ca44), linear-gradient(150deg, #f7ca44 12%, transparent 12.5%, transparent 87%, #f7ca44 87.5%, #f7ca44), linear-gradient(60deg, #f7ca4477 25%, transparent 25.5%, transparent 75%, #f7ca4477 75%, #f7ca4477), linear-gradient(60deg, #f7ca4477 25%, transparent 25.5%, transparent 75%, #f7ca4477 75%, #f7ca4477);
+    // background-size: 20px 35px;
+    // background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+

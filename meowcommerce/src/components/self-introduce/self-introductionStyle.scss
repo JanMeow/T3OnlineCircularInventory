@@ -1,13 +1,40 @@
 .self-introduction-container{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    border: dashed 2px black;
+    width: auto;
+    height: 700px;
+    border: dashed 1px black;
     display: flex;
-    align-content:flex-end ;
-    margin-top: 20%;
-    bottom: 8px;
-    right: 16px;
+    align-content:center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1525088469824-fecdf2298546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80');
+    background-size: cover;
+    background-position: top left;
 
+    .introduction-container{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 300px;
+        text-align: center;
+        align-items: center;
+        margin-left: 3%;
+        margin-top: 12%;
+
+        .button{
+            margin-top: 2%;
+            width: 250px;
+            height: 32px;
+            color: white;
+            background-color: rgb(14, 14, 14);
+        }
+
+        .button:hover{
+            background-color: white;
+            color: rgb(14, 14, 14);
+            border: dashed 1px;
+            cursor: pointer;
+        }
+    }
+
+
+    
 }
