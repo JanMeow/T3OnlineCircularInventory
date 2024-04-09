@@ -2,6 +2,9 @@
 
 #### VIST OUR SITE ! (Still under Construction tho)
 [ETH Online Circular Materials Inventory](https://ethcircularmaterial.site/)
+### Another Ongoing Material Library built for BFH Student ! (I know its the same layout, I will change it soon !)
+[BFH Reuse24](https://bfhreuse24.site/)
+
 
 
 "There are existing used materials platform in switzerland, however, the features are not useful for generating a design using these used materials from demolished buildings, material features also differe across platform and it lacks 3D model which is crucial for architectural design"
